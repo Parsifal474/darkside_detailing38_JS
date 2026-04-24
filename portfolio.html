@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkSide - Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <img src="logo2.PNG" alt="DarkSide" class="logo__img">
+            </a>
+            <button class="burger" id="burgerBtn" aria-label="Меню">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+            <nav class="nav" id="navMenu">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Главная</a></li>
+                    <li><a href="services.html" class="nav__link">Услуги</a></li>
+                    <li><a href="portfolio.html" class="nav__link active">Портфолио</a></li>
+                    <li><a href="about.html" class="nav__link">О нас</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://t.me/ваш_ник" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="mailto:vasilijakovchuk440@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+79041527874"><i class="fas fa-phone-alt"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="portfolio-header">
+        <div class="container">
+            <h1>Наши Работы</h1>
+            <div class="filters" id="filterButtons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="polish">Полировка</button>
+                <button class="filter-btn" data-filter="cleaning">Химчистка</button>
+                <button class="filter-btn" data-filter="film">Пленка</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="gallery" id="gallery">
+            <!-- 1. Полировка: Mercedes A45 -->
+            <div class="gallery-item" data-category="polish">
+                <img src="машина_Mercedes_A45.jpg" alt="Mercedes A45">
+                <div class="gallery-overlay">
+                    <h3>Mercedes A45</h3>
+                    <p>Полировка + керамика</p>
+                </div>
+            </div>
+            <!-- 2. Химчистка: Lexus LX 570 -->
+            <div class="gallery-item" data-category="cleaning">
+                <img src="машина_Lexus_LX_570.jpg" alt="Lexus LX 570">
+                <div class="gallery-overlay">
+                    <h3>Lexus LX 570</h3>
+                    <p>Химчистка салона</p>
+                </div>
+            </div>
+            <!-- 3. Пленка: Kia Optima -->
+            <div class="gallery-item" data-category="film">
+                <img src="машина_Kia_Optima.jpg" alt="Kia Optima">
+                <div class="gallery-overlay">
+                    <h3>Kia Optima</h3>
+                    <p>Антигравийная пленка</p>
+                </div>
+            </div>
+            <!-- 4. Полировка: Mercedes CLS -->
+            <div class="gallery-item" data-category="polish">
+                <img src="машина_Mercedes_CLS.jpg" alt="Mercedes CLS">
+                <div class="gallery-overlay">
+                    <h3>Mercedes CLS</h3>
+                    <p>Восстановление ЛКП</p>
+                </div>
+            </div>
+            <!-- 5. Пленка: Mazda CX5 -->
+            <div class="gallery-item" data-category="film">
+                <img src="машина_Mazda_CX5.jpg" alt="Mazda CX5">
+                <div class="gallery-overlay">
+                    <h3>Mazda CX-5</h3>
+                    <p>Оклейка матовой пленкой</p>
+                </div>
+            </div>
+            <!-- 6. Полировка: Mercedes S AMG -->
+            <div class="gallery-item" data-category="polish">
+                <img src="машина_Mercedes_S_AMG.jpg" alt="Mercedes S AMG">
+                <div class="gallery-overlay">
+                    <h3>Mercedes S AMG</h3>
+                    <p>Полировка + керамика</p>
+                </div>
+            </div>
+            <!-- 7. Химчистка: Nissan Murano -->
+            <div class="gallery-item" data-category="cleaning">
+                <img src="машина_Nissan_Murano.jpg" alt="Nissan Murano">
+                <div class="gallery-overlay">
+                    <h3>Nissan Murano</h3>
+                    <p>Глубокая химчистка</p>
+                </div>
+            </div>
+            <!-- 8. Пленка: Mercedes GL -->
+            <div class="gallery-item" data-category="film">
+                <img src="машина_Mercedes_GL.jpg" alt="Mercedes GL">
+                <div class="gallery-overlay">
+                    <h3>Mercedes GL</h3>
+                    <p>Защитная пленка на кузов</p>
+                </div>
+            </div>
+            <!-- 9. Химчистка: Mercedes S500 W222 -->
+            <div class="gallery-item" data-category="cleaning">
+                <img src="машина_Mercedes_S500_W222.jpg" alt="Mercedes S500 W222">
+                <div class="gallery-overlay">
+                    <h3>Mercedes S500 W222</h3>
+                    <p>Химчистка салона + озонирование</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <div class="logo">DarkSide</div>
+                <p>Профессиональный детейлинг центр в Иркутске. Делаем красиво и надёжно.</p>
+                <div class="footer__socials">
+                    <a href="https://t.me/kakoi_nickname" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://wa.me/79041527874" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:vasilijakovchuk440@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>Меню</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Контакты</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Иркутск, ул. Ленина 11 к5</li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+79041527874">+7 (904) 152-78-74</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:vasilijakovchuk440@gmail.com">darkside@mail.ru</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 DarkSide. Все права защищены by рыжик</p>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
